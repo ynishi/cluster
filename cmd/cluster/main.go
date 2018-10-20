@@ -7,6 +7,6 @@ import (
 
 func main() {
 	fmt.Println("main")
-	cluster := cluster.Cluster{}
-	fmt.Println(cluster)
+	service := cluster.NewDefaultClusterService("0.0.0", nil)
+	fmt.Println(service.Version())
 }
